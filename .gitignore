@@ -1,0 +1,30 @@
+# Environment variables and credentials
+.env*
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+secrets/
+credentials.json
+
+# Local environments, caches, and temporary files
+.venv/
+venv/
+node_modules/
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.py[cod]
+*.tmp
+*.temp
+*.log
+*.swp
+*.swo
+
+# Operating-system metadata
+__MACOSX/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,5 @@
+# Temporary GitHub Pages version. HTML pages set noindex, nofollow.
+# Allow crawling so search engines can read those directives.
+# Do not add a sitemap URL until the final domain is confirmed.
+User-agent: *
+Allow: /

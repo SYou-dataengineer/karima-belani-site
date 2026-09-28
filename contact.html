@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Karima Belani, psychologue à Montréal</title>
+    <meta
+      name="description"
+      content="Contactez Karima Belani, psychologue à Montréal. Prendre rendez-vous, poser une question ou demander une information générale."
+    />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Contact | Karima Belani" />
+    <meta
+      property="og:description"
+      content="Commençons par une première conversation."
+    />
+    <meta property="og:image" content="assets/images/karima-belani.jpg" />
+    <meta property="og:locale" content="fr_CA" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script defer src="assets/js/main.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="Accueil Karima Belani">
+          <span class="brand-mark">KB</span>
+          <span class="brand-text">
+            <strong>Karima Belani</strong>
+            <small>Psychologue</small>
+          </span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mainNav" aria-label="Ouvrir le menu">
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav class="main-nav" id="mainNav" aria-label="Navigation principale">
+          <a href="index.html">Accueil</a>
+          <a href="a-propos.html">À propos</a>
+          <a href="services.html">Services</a>
+          <a href="approche.html">Approche</a>
+          <a href="conferences-formations.html">Conférences &amp; formations</a>
+          <a href="contact.html" aria-current="page">Contact</a>
+        </nav>
+
+        <a class="btn btn-primary header-cta" href="contact.html">Prendre rendez-vous</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container page-hero-inner narrow">
+          <p class="eyebrow">Contact</p>
+          <h1>Contact</h1>
+          <p class="page-subtitle">Commençons par une première conversation.</p>
+        </div>
+      </section>
+
+      <section class="section contact-page-section">
+        <div class="container contact-grid">
+          <div class="contact-intro">
+            <p class="eyebrow">Nous joindre</p>
+            <h2>Une première étape simple et respectueuse</h2>
+            <p>
+              Prenez contact pour discuter de votre besoin, de votre demande ou de vos questions. Chaque première rencontre constitue une étape de compréhension.
+            </p>
+            <div class="contact-details" aria-label="Coordonnées de contact">
+              <a href="tel:+15148587007">+1 514-858-7007</a>
+              <a href="mailto:karima.belani@hotmail.com">karima.belani@hotmail.com</a>
+              <p>
+                1600 Bd Henri-Bourassa O, bureau 255<br />
+                Montréal, QC H3M 3E3<br />
+                Canada
+              </p>
+            </div>
+
+            <div class="map-link-wrap">
+              <a class="btn btn-secondary" href="https://www.google.com/maps/search/?api=1&query=1600+Bd+Henri-Bourassa+O+bureau+255+Montr%C3%A9al+QC+H3M+3E3" target="_blank" rel="noreferrer">Voir l’adresse sur Google Maps</a>
+            </div>
+
+            <div class="urgent-note">
+              <p>
+                Le formulaire de contact et le courriel ne constituent pas un service d’urgence. En situation urgente, veuillez contacter les services d’urgence appropriés ou les ressources disponibles dans votre région.
+              </p>
+            </div>
+          </div>
+
+          <form class="contact-form" action="#" method="post" id="contactForm">
+            <!-- FORMSPREE_ENDPOINT À CONFIGURER AVANT LA MISE EN PRODUCTION -->
+            <div class="field-row">
+              <label for="nom">
+                <span>Nom</span>
+                <input id="nom" type="text" name="nom" autocomplete="family-name" placeholder="Votre nom" required />
+              </label>
+              <label for="prenom">
+                <span>Prénom</span>
+                <input id="prenom" type="text" name="prenom" autocomplete="given-name" placeholder="Votre prénom" />
+              </label>
+            </div>
+
+            <div class="field-row">
+              <label for="email">
+                <span>Courriel</span>
+                <input id="email" type="email" name="email" autocomplete="email" placeholder="nom@example.com" required />
+              </label>
+              <label for="telephone">
+                <span>Téléphone</span>
+                <input id="telephone" type="tel" name="telephone" autocomplete="tel" placeholder="(514) 555-1234" />
+              </label>
+            </div>
+
+            <label for="objet">
+              <span>Objet</span>
+              <input id="objet" type="text" name="objet" autocomplete="off" placeholder="Objet de votre demande" />
+            </label>
+
+            <label for="message">
+              <span>Message</span>
+              <textarea id="message" name="message" rows="5" autocomplete="off" placeholder="Décrivez brièvement votre besoin..." required></textarea>
+            </label>
+
+            <div class="honeypot" aria-hidden="true">
+              <label for="website">Ne remplissez pas ce champ</label>
+              <input id="website" type="text" name="website" tabindex="-1" autocomplete="off" />
+            </div>
+
+            <label class="checkbox-row" for="consentement">
+              <input id="consentement" type="checkbox" name="consentement" required />
+              <span>
+                J’accepte que ce formulaire soit utilisé uniquement pour une prise de contact générale et je confirme que je ne transmets pas d’informations médicales sensibles dans ce formulaire.
+              </span>
+            </label>
+
+            <p class="privacy-note">
+              Pour protéger votre confidentialité, veuillez éviter d’inscrire des renseignements médicaux ou personnels sensibles dans ce formulaire.
+            </p>
+
+            <div class="form-status" id="formStatus" role="status" aria-live="polite">
+              Le formulaire n’est pas encore activé. Pour nous joindre, utilisez les coordonnées indiquées sur cette page.
+            </div>
+
+            <button class="btn btn-primary" type="submit" disabled>Formulaire temporairement indisponible</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand footer-brand" href="index.html" aria-label="Accueil">
+            <span class="brand-mark">KB</span>
+            <span class="brand-text">
+              <strong>Karima Belani</strong>
+              <small>Psychologue</small>
+            </span>
+          </a>
+        </div>
+
+        <nav class="footer-nav" aria-label="Navigation du pied de page">
+          <div>
+            <h3>Navigation</h3>
+            <a href="index.html">Accueil</a>
+            <a href="a-propos.html">À propos</a>
+            <a href="services.html">Services</a>
+            <a href="approche.html">Approche</a>
+          </div>
+          <div>
+            <h3>Ressources</h3>
+            <a href="conferences-formations.html">Conférences &amp; formations</a>
+            <a href="contact.html" aria-current="page">Contact</a>
+            <a href="politique-confidentialite.html">Politique de confidentialité</a>
+            <a href="conditions-utilisation.html">Conditions d’utilisation</a>
+          </div>
+        </nav>
+
+        <div class="footer-meta" aria-label="Nous joindre">
+          <h3>Nous joindre</h3>
+          <a href="tel:+15148587007">+1 514-858-7007</a>
+          <a href="mailto:karima.belani@hotmail.com">karima.belani@hotmail.com</a>
+          <p>1600 Bd Henri-Bourassa O, bureau 255<br />Montréal, QC H3M 3E3<br />Canada</p>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <span>© 2026 Karima Belani</span>
+      </div>
+    </footer>
+  </body>
+</html>
